@@ -1,0 +1,10 @@
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Release\ADSTwinCat3.exe.config
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Release\ADSTwinCat3.exe
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Release\ADSTwinCat3.pdb
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.csproj.AssemblyReference.cache
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.Form1.resources
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.Properties.Resources.resources
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.csproj.GenerateResource.cache
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.csproj.CoreCompileInputs.cache
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.exe
+C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Release\ADSTwinCat3.pdb
