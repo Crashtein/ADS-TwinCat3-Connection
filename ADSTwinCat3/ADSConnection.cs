@@ -18,16 +18,21 @@ namespace ADSTwinCat3
 {
     class ADSConnection
     {
-        TcAdsClient tcAds = null;
-        private string ADSAddress = "5.43.145.72.1.1";
-        private int ADSPort = 851;
+        TcAdsClient tcAds = new TcAdsClient();
+        private string AMSAddress = null;
+        private int AMSPort = 851;
+        public ADSConnection(string address, int port)
+        {
+            AMSAddress = address;
+            AMSPort = port;
+        }
         public string Connect()
         {
             Dispose();
             try
             {
                 tcAds = new TcAdsClient();
-                tcAds.Connect(ADSAddress, ADSPort);
+                tcAds.Connect(AMSAddress, AMSPort);
             }catch(Exception ex)
             {
                 if (ex != null)
@@ -92,7 +97,7 @@ namespace ADSTwinCat3
             return binaryReader;
             //return Convert.ToString(binaryReader.ReadInt32(), 2);
         }
-        public Boolean ReadBinaryVariablesByName(string name)
+        public Boolean ReadBooleanVariablesByName(string name)
         {
             BinaryReader br = ReadVariablesByName(name, 1);
             if (br == null)
@@ -101,18 +106,26 @@ namespace ADSTwinCat3
             }
             return br.ReadBoolean();
         }
-        public Boolean[] ReadBinaryVariablesByName(string[] names)
+        public Boolean[] ReadBooleanVariablesByName(string[] names)
         {
             Boolean[] values = new Boolean[names.Length];
-            for(int i = 0; i < names.Length; i++)
+            try
             {
-                values[i] = ReadBinaryVariablesByName(names[i]);
+                for (int i = 0; i < names.Length; i++)
+                {
+                    values[i] = ReadBooleanVariablesByName(names[i]);
+                }
+            }catch(Exception ex)
+            {
+                if (ex != null)
+                {
+                    throw;
+                }
             }
             return values;
         }
         public Int32 ReadInt32VariablesByName(string name)
         {
-
             BinaryReader br = ReadVariablesByName(name, 4);
             if (br == null)
             {
@@ -122,10 +135,21 @@ namespace ADSTwinCat3
         }
         public Int32[] ReadInt32VariablesByName(string[] names)
         {
-            Int32[] values = new Int32[names.Length];
-            for (int i = 0; i < names.Length; i++)
+            Int32[] values = null;
+            try
             {
-                values[i]  = ReadInt32VariablesByName(names[i]);
+                values = new Int32[names.Length];
+                for (int i = 0; i < names.Length; i++)
+                {
+                    values[i] = ReadInt32VariablesByName(names[i]);
+                }
+            }
+            catch(Exception ex)
+            {
+                if (ex != null)
+                {
+                    return null;
+                }
             }
             return values;
         }
