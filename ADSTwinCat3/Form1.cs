@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace ADSTwinCat3
 {
@@ -15,6 +16,7 @@ namespace ADSTwinCat3
         private ADSConnection Connection = null;
         private CDataTable data = null;
         private Timer timer = null;
+        private CStreamFile fileStream = null;
         public Form1()
         {
             InitializeComponent();
@@ -36,7 +38,14 @@ namespace ADSTwinCat3
             {
                 timer.Dispose();
             }
-            
+            if (fileStream == null || fileStream.getFileName()!=FileNameBox.Text)
+            {
+                if (fileStream != null)
+                {
+                    fileStream.CloseStream();
+                }
+                fileStream = new CStreamFile(FileNameBox.Text);
+            }
             
             string varNames = VarNameBox.Text;
             string[] varNamesSplit = CDataTable.splitString(varNames);
@@ -60,15 +69,22 @@ namespace ADSTwinCat3
                 {
                     data.setType(1);
                 }
-                ReadBox.Text=string.Join(";", data.getColumnNames());
+                string line = string.Join(";", data.getColumnNames());
+                if (ShowLogsBox.Checked)
+                {
+                    ReadBox.Text = line;
+                }
+                if (SaveToFileBox.Checked)
+                {
+                    fileStream.Write("\""+string.Join("\";\"", data.getColumnNames())+"\"");
+                }
+                
             }
-
             //ReadBox.AppendText("\r\n" + date + "    " + varNames + "=" + Convert.ToString(Connection.ReadInt32VariablesByName(varNamesSplit)));
             timer = new Timer();
             timer.Tick += new EventHandler(update);
             timer.Interval = Convert.ToInt32(timerNBox.Value); //in ms
             timer.Start();
-
         }
         private void update(object sender, EventArgs e)
         {
@@ -83,11 +99,17 @@ namespace ADSTwinCat3
             }
             string[] date = { DateTime.Now.ToString("dd.MM.yyyy HH:mm:ss.fff") };
             string[] row = date.Concat(results).ToArray();
-            //data.addRow(row);
 
-            ReadBox.AppendText("\r\n"+string.Join(";", row));
+            string line = string.Join(";", row);
+            if (ShowLogsBox.Checked)
+            {
+                ReadBox.AppendText("\r\n" + string.Join(";", row));
+            }
+            if (SaveToFileBox.Checked)
+            {
+                fileStream.Write("\""+string.Join("\";\"", row)+"\"");
+            }
         }
-
         private void StopReadingButton_Click(object sender, EventArgs e)
         {
             timer.Dispose();

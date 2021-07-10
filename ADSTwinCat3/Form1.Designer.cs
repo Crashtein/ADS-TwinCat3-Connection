@@ -45,8 +45,13 @@ namespace ADSTwinCat3
             this.label3 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.timerNBox = new System.Windows.Forms.NumericUpDown();
+            this.FileNameBox = new System.Windows.Forms.TextBox();
+            this.ShowLogsBox = new System.Windows.Forms.CheckBox();
+            this.SaveToFileBox = new System.Windows.Forms.CheckBox();
+            this.performanceCounter1 = new System.Diagnostics.PerformanceCounter();
             ((System.ComponentModel.ISupportInitialize)(this.PortNBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerNBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).BeginInit();
             this.SuspendLayout();
             // 
             // ConnectBox
@@ -54,7 +59,7 @@ namespace ADSTwinCat3
             this.ConnectBox.Location = new System.Drawing.Point(720, 30);
             this.ConnectBox.Name = "ConnectBox";
             this.ConnectBox.ReadOnly = true;
-            this.ConnectBox.Size = new System.Drawing.Size(133, 20);
+            this.ConnectBox.Size = new System.Drawing.Size(94, 20);
             this.ConnectBox.TabIndex = 0;
             // 
             // ConnectButton
@@ -74,7 +79,7 @@ namespace ADSTwinCat3
             this.ReadBox.Name = "ReadBox";
             this.ReadBox.ReadOnly = true;
             this.ReadBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReadBox.Size = new System.Drawing.Size(841, 508);
+            this.ReadBox.Size = new System.Drawing.Size(984, 533);
             this.ReadBox.TabIndex = 3;
             // 
             // StartReadingButton
@@ -224,11 +229,46 @@ namespace ADSTwinCat3
             0,
             0});
             // 
+            // FileNameBox
+            // 
+            this.FileNameBox.Location = new System.Drawing.Point(908, 28);
+            this.FileNameBox.Name = "FileNameBox";
+            this.FileNameBox.Size = new System.Drawing.Size(88, 20);
+            this.FileNameBox.TabIndex = 23;
+            this.FileNameBox.Text = "log.txt";
+            // 
+            // ShowLogsBox
+            // 
+            this.ShowLogsBox.AutoSize = true;
+            this.ShowLogsBox.Checked = true;
+            this.ShowLogsBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.ShowLogsBox.Location = new System.Drawing.Point(820, 12);
+            this.ShowLogsBox.Name = "ShowLogsBox";
+            this.ShowLogsBox.Size = new System.Drawing.Size(75, 17);
+            this.ShowLogsBox.TabIndex = 24;
+            this.ShowLogsBox.Text = "Show logs";
+            this.ShowLogsBox.UseVisualStyleBackColor = true;
+            // 
+            // SaveToFileBox
+            // 
+            this.SaveToFileBox.AutoSize = true;
+            this.SaveToFileBox.Checked = true;
+            this.SaveToFileBox.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.SaveToFileBox.Location = new System.Drawing.Point(820, 32);
+            this.SaveToFileBox.Name = "SaveToFileBox";
+            this.SaveToFileBox.Size = new System.Drawing.Size(82, 17);
+            this.SaveToFileBox.TabIndex = 25;
+            this.SaveToFileBox.Text = "Save to File";
+            this.SaveToFileBox.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(864, 576);
+            this.ClientSize = new System.Drawing.Size(1008, 601);
+            this.Controls.Add(this.SaveToFileBox);
+            this.Controls.Add(this.ShowLogsBox);
+            this.Controls.Add(this.FileNameBox);
             this.Controls.Add(this.timerNBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
@@ -245,8 +285,8 @@ namespace ADSTwinCat3
             this.Controls.Add(this.ReadBox);
             this.Controls.Add(this.ConnectButton);
             this.Controls.Add(this.ConnectBox);
-            this.MaximumSize = new System.Drawing.Size(880, 615);
-            this.MinimumSize = new System.Drawing.Size(880, 615);
+            this.MaximumSize = new System.Drawing.Size(1024, 640);
+            this.MinimumSize = new System.Drawing.Size(1024, 640);
             this.Name = "Form1";
             this.Text = "TwinCat Reader";
             ((System.ComponentModel.ISupportInitialize)(this.PortNBox)).EndInit();
@@ -274,6 +314,10 @@ namespace ADSTwinCat3
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.NumericUpDown timerNBox;
+        private System.Windows.Forms.TextBox FileNameBox;
+        private System.Windows.Forms.CheckBox ShowLogsBox;
+        private System.Windows.Forms.CheckBox SaveToFileBox;
+        private System.Diagnostics.PerformanceCounter performanceCounter1;
     }
 }
 
