@@ -33,10 +33,6 @@ namespace ADSTwinCat3
             this.ConnectButton = new System.Windows.Forms.Button();
             this.ReadBox = new System.Windows.Forms.TextBox();
             this.StartReadingButton = new System.Windows.Forms.Button();
-            this.VarNameBox = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.ReadAsInt32RadioButton = new System.Windows.Forms.RadioButton();
-            this.ReadAsBooleanRadioButton = new System.Windows.Forms.RadioButton();
             this.StopReadingButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.addressBox = new System.Windows.Forms.TextBox();
@@ -56,17 +52,19 @@ namespace ADSTwinCat3
             // 
             // ConnectBox
             // 
-            this.ConnectBox.Location = new System.Drawing.Point(720, 30);
+            this.ConnectBox.Location = new System.Drawing.Point(960, 37);
+            this.ConnectBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConnectBox.Name = "ConnectBox";
             this.ConnectBox.ReadOnly = true;
-            this.ConnectBox.Size = new System.Drawing.Size(94, 20);
+            this.ConnectBox.Size = new System.Drawing.Size(124, 22);
             this.ConnectBox.TabIndex = 0;
             // 
             // ConnectButton
             // 
-            this.ConnectButton.Location = new System.Drawing.Point(649, 10);
+            this.ConnectButton.Location = new System.Drawing.Point(865, 12);
+            this.ConnectButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ConnectButton.Name = "ConnectButton";
-            this.ConnectButton.Size = new System.Drawing.Size(68, 41);
+            this.ConnectButton.Size = new System.Drawing.Size(91, 50);
             this.ConnectButton.TabIndex = 2;
             this.ConnectButton.Text = "Connect";
             this.ConnectButton.UseVisualStyleBackColor = true;
@@ -74,68 +72,32 @@ namespace ADSTwinCat3
             // 
             // ReadBox
             // 
-            this.ReadBox.Location = new System.Drawing.Point(12, 56);
+            this.ReadBox.Location = new System.Drawing.Point(16, 69);
+            this.ReadBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ReadBox.Multiline = true;
             this.ReadBox.Name = "ReadBox";
             this.ReadBox.ReadOnly = true;
             this.ReadBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.ReadBox.Size = new System.Drawing.Size(984, 533);
+            this.ReadBox.Size = new System.Drawing.Size(1311, 655);
             this.ReadBox.TabIndex = 3;
             // 
             // StartReadingButton
             // 
-            this.StartReadingButton.Location = new System.Drawing.Point(127, 11);
+            this.StartReadingButton.Location = new System.Drawing.Point(169, 14);
+            this.StartReadingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StartReadingButton.Name = "StartReadingButton";
-            this.StartReadingButton.Size = new System.Drawing.Size(71, 39);
+            this.StartReadingButton.Size = new System.Drawing.Size(95, 48);
             this.StartReadingButton.TabIndex = 10;
             this.StartReadingButton.Text = "Start";
             this.StartReadingButton.UseVisualStyleBackColor = true;
             this.StartReadingButton.Click += new System.EventHandler(this.StartReadingButton_Click);
             // 
-            // VarNameBox
-            // 
-            this.VarNameBox.Location = new System.Drawing.Point(349, 27);
-            this.VarNameBox.Name = "VarNameBox";
-            this.VarNameBox.Size = new System.Drawing.Size(113, 20);
-            this.VarNameBox.TabIndex = 11;
-            this.VarNameBox.Text = "X1;X2";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(81, 13);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Variable Names";
-            // 
-            // ReadAsInt32RadioButton
-            // 
-            this.ReadAsInt32RadioButton.AutoSize = true;
-            this.ReadAsInt32RadioButton.Checked = true;
-            this.ReadAsInt32RadioButton.Location = new System.Drawing.Point(14, 11);
-            this.ReadAsInt32RadioButton.Name = "ReadAsInt32RadioButton";
-            this.ReadAsInt32RadioButton.Size = new System.Drawing.Size(92, 17);
-            this.ReadAsInt32RadioButton.TabIndex = 13;
-            this.ReadAsInt32RadioButton.TabStop = true;
-            this.ReadAsInt32RadioButton.Text = "Read as Int32";
-            this.ReadAsInt32RadioButton.UseVisualStyleBackColor = true;
-            // 
-            // ReadAsBooleanRadioButton
-            // 
-            this.ReadAsBooleanRadioButton.AutoSize = true;
-            this.ReadAsBooleanRadioButton.Location = new System.Drawing.Point(14, 33);
-            this.ReadAsBooleanRadioButton.Name = "ReadAsBooleanRadioButton";
-            this.ReadAsBooleanRadioButton.Size = new System.Drawing.Size(107, 17);
-            this.ReadAsBooleanRadioButton.TabIndex = 14;
-            this.ReadAsBooleanRadioButton.Text = "Read as Boolean";
-            this.ReadAsBooleanRadioButton.UseVisualStyleBackColor = true;
-            // 
             // StopReadingButton
             // 
-            this.StopReadingButton.Location = new System.Drawing.Point(204, 11);
+            this.StopReadingButton.Location = new System.Drawing.Point(272, 14);
+            this.StopReadingButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StopReadingButton.Name = "StopReadingButton";
-            this.StopReadingButton.Size = new System.Drawing.Size(71, 39);
+            this.StopReadingButton.Size = new System.Drawing.Size(95, 48);
             this.StopReadingButton.TabIndex = 15;
             this.StopReadingButton.Text = "Stop";
             this.StopReadingButton.UseVisualStyleBackColor = true;
@@ -144,23 +106,26 @@ namespace ADSTwinCat3
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(723, 13);
+            this.label1.Location = new System.Drawing.Point(964, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(48, 17);
             this.label1.TabIndex = 16;
             this.label1.Text = "Status";
             // 
             // addressBox
             // 
-            this.addressBox.Location = new System.Drawing.Point(544, 10);
+            this.addressBox.Location = new System.Drawing.Point(725, 12);
+            this.addressBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addressBox.Name = "addressBox";
-            this.addressBox.Size = new System.Drawing.Size(99, 20);
+            this.addressBox.Size = new System.Drawing.Size(131, 22);
             this.addressBox.TabIndex = 17;
             this.addressBox.Text = "5.43.145.72.1.1";
             // 
             // PortNBox
             // 
-            this.PortNBox.Location = new System.Drawing.Point(544, 31);
+            this.PortNBox.Location = new System.Drawing.Point(725, 38);
+            this.PortNBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.PortNBox.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -172,7 +137,7 @@ namespace ADSTwinCat3
             0,
             0});
             this.PortNBox.Name = "PortNBox";
-            this.PortNBox.Size = new System.Drawing.Size(99, 20);
+            this.PortNBox.Size = new System.Drawing.Size(132, 22);
             this.PortNBox.TabIndex = 18;
             this.PortNBox.Value = new decimal(new int[] {
             851,
@@ -183,33 +148,37 @@ namespace ADSTwinCat3
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(468, 13);
+            this.label2.Location = new System.Drawing.Point(624, 16);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 13);
+            this.label2.Size = new System.Drawing.Size(92, 17);
             this.label2.TabIndex = 19;
             this.label2.Text = "AMS address";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(468, 33);
+            this.label3.Location = new System.Drawing.Point(624, 41);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(26, 13);
+            this.label3.Size = new System.Drawing.Size(34, 17);
             this.label3.TabIndex = 20;
             this.label3.Text = "Port";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(285, 9);
+            this.label5.Location = new System.Drawing.Point(380, 11);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(55, 13);
+            this.label5.Size = new System.Drawing.Size(74, 17);
             this.label5.TabIndex = 21;
             this.label5.Text = "Timer [ms]";
             // 
             // timerNBox
             // 
-            this.timerNBox.Location = new System.Drawing.Point(284, 28);
+            this.timerNBox.Location = new System.Drawing.Point(379, 34);
+            this.timerNBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.timerNBox.Maximum = new decimal(new int[] {
             9999999,
             0,
@@ -221,7 +190,7 @@ namespace ADSTwinCat3
             0,
             0});
             this.timerNBox.Name = "timerNBox";
-            this.timerNBox.Size = new System.Drawing.Size(59, 20);
+            this.timerNBox.Size = new System.Drawing.Size(79, 22);
             this.timerNBox.TabIndex = 22;
             this.timerNBox.Value = new decimal(new int[] {
             200,
@@ -231,9 +200,10 @@ namespace ADSTwinCat3
             // 
             // FileNameBox
             // 
-            this.FileNameBox.Location = new System.Drawing.Point(908, 28);
+            this.FileNameBox.Location = new System.Drawing.Point(1211, 34);
+            this.FileNameBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.FileNameBox.Name = "FileNameBox";
-            this.FileNameBox.Size = new System.Drawing.Size(88, 20);
+            this.FileNameBox.Size = new System.Drawing.Size(116, 22);
             this.FileNameBox.TabIndex = 23;
             this.FileNameBox.Text = "log.txt";
             // 
@@ -242,9 +212,10 @@ namespace ADSTwinCat3
             this.ShowLogsBox.AutoSize = true;
             this.ShowLogsBox.Checked = true;
             this.ShowLogsBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ShowLogsBox.Location = new System.Drawing.Point(820, 12);
+            this.ShowLogsBox.Location = new System.Drawing.Point(1093, 15);
+            this.ShowLogsBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ShowLogsBox.Name = "ShowLogsBox";
-            this.ShowLogsBox.Size = new System.Drawing.Size(75, 17);
+            this.ShowLogsBox.Size = new System.Drawing.Size(94, 21);
             this.ShowLogsBox.TabIndex = 24;
             this.ShowLogsBox.Text = "Show logs";
             this.ShowLogsBox.UseVisualStyleBackColor = true;
@@ -254,18 +225,19 @@ namespace ADSTwinCat3
             this.SaveToFileBox.AutoSize = true;
             this.SaveToFileBox.Checked = true;
             this.SaveToFileBox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.SaveToFileBox.Location = new System.Drawing.Point(820, 32);
+            this.SaveToFileBox.Location = new System.Drawing.Point(1093, 39);
+            this.SaveToFileBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveToFileBox.Name = "SaveToFileBox";
-            this.SaveToFileBox.Size = new System.Drawing.Size(82, 17);
+            this.SaveToFileBox.Size = new System.Drawing.Size(104, 21);
             this.SaveToFileBox.TabIndex = 25;
             this.SaveToFileBox.Text = "Save to File";
             this.SaveToFileBox.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 601);
+            this.ClientSize = new System.Drawing.Size(1341, 730);
             this.Controls.Add(this.SaveToFileBox);
             this.Controls.Add(this.ShowLogsBox);
             this.Controls.Add(this.FileNameBox);
@@ -277,20 +249,18 @@ namespace ADSTwinCat3
             this.Controls.Add(this.addressBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.StopReadingButton);
-            this.Controls.Add(this.ReadAsBooleanRadioButton);
-            this.Controls.Add(this.ReadAsInt32RadioButton);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.VarNameBox);
             this.Controls.Add(this.StartReadingButton);
             this.Controls.Add(this.ReadBox);
             this.Controls.Add(this.ConnectButton);
             this.Controls.Add(this.ConnectBox);
-            this.MaximumSize = new System.Drawing.Size(1024, 640);
-            this.MinimumSize = new System.Drawing.Size(1024, 640);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximumSize = new System.Drawing.Size(1359, 777);
+            this.MinimumSize = new System.Drawing.Size(1359, 777);
             this.Name = "Form1";
             this.Text = "TwinCat Reader";
             ((System.ComponentModel.ISupportInitialize)(this.PortNBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerNBox)).EndInit();
+       //     ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,10 +272,6 @@ namespace ADSTwinCat3
         private System.Windows.Forms.Button ConnectButton;
         private System.Windows.Forms.TextBox ReadBox;
         private System.Windows.Forms.Button StartReadingButton;
-        private System.Windows.Forms.TextBox VarNameBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RadioButton ReadAsInt32RadioButton;
-        private System.Windows.Forms.RadioButton ReadAsBooleanRadioButton;
         private System.Windows.Forms.Button StopReadingButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox addressBox;
@@ -318,6 +284,13 @@ namespace ADSTwinCat3
         private System.Windows.Forms.CheckBox ShowLogsBox;
         private System.Windows.Forms.CheckBox SaveToFileBox;
         private System.Diagnostics.PerformanceCounter performanceCounter1;
+
+
+        private int[] tabState = { 10, 2, 6, 4, 5, 4, 6, 2, 10, 8, 9, 8 ,10,2};
+        private string[] limitSwitches = { "X5", "X6", "X8", "X7" };
+        private int lastLastState = 10;
+        private int lastState = 10;
+        private bool errorSwitches=false;
     }
 }
 
