@@ -26,7 +26,6 @@ namespace ADSTwinCat3
             int iter = 0;
             foreach (string line in fileData)
             {
-                Console.WriteLine(line);
                 string[] columns = line.Split(separator);
                 if (iter == 0)
                 {
@@ -53,7 +52,6 @@ namespace ADSTwinCat3
                             suma = (int)(suma + pom * Math.Pow(2.0, Convert.ToDouble(iter2)));
                         }
                     }
-                    Console.WriteLine(suma);
                     tabState.Add(suma);
                     iter = iter + 1;
                 }

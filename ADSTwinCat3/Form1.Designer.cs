@@ -321,7 +321,7 @@ namespace ADSTwinCat3
             this.Text = "TwinCat Reader";
             ((System.ComponentModel.ISupportInitialize)(this.PortNBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.timerNBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
+          //  ((System.ComponentModel.ISupportInitialize)(this.performanceCounter1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
