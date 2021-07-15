@@ -10,11 +10,21 @@ namespace ADSTwinCat3
     class CStreamFile
     {
         private StreamWriter file = null;
+        private StreamReader fileR = null;
         private string fileName = null;
-        public CStreamFile(string filename)
+        private string errors = null;
+        public CStreamFile(string filename, bool readFile, bool writeFile)
         {
             fileName = filename;
-            OpenStream();
+            if (true == readFile)
+            {
+                OpenStreamR();
+            }
+            if (true == writeFile)
+            {
+                OpenStream();
+            }
+            
         }
         ~CStreamFile()
         {
@@ -23,6 +33,19 @@ namespace ADSTwinCat3
         public void OpenStream()
         {
             file = new StreamWriter(fileName, append: false);
+        }
+
+        public void OpenStreamR()
+        {
+            try
+            {
+                fileR = new StreamReader(fileName);
+            }
+            catch (Exception ex)
+            {
+                
+            }
+            
         }
         public void CloseStream()
         {
@@ -34,9 +57,18 @@ namespace ADSTwinCat3
             file.WriteLine(line);
             file.Flush();
         }
+        public string[] Read()
+        {
+
+
+            string[] lines = System.IO.File.ReadAllLines(fileName);
+            return lines;
+        }
+
         public string getFileName()
         {
             return fileName;
         }
+
     }
 }

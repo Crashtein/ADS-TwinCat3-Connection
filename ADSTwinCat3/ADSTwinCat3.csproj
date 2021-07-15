@@ -70,6 +70,8 @@
     <Compile Include="ADSConnection.cs" />
     <Compile Include="CDataTable.cs" />
     <Compile Include="CStreamFile.cs" />
+    <Compile Include="DataAnalysis.cs" />
+    <Compile Include="dataValidationAlgorithm.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

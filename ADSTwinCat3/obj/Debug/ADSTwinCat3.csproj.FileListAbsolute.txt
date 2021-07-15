@@ -21,3 +21,13 @@ C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\
 C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.csproj.CoreCompileInputs.cache
 C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.exe
 C:\Users\klukp\source\repos\ADSTwinCat3\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.pdb
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Debug\ADSTwinCat3.exe.config
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Debug\ADSTwinCat3.exe
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\bin\Debug\ADSTwinCat3.pdb
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.csprojAssemblyReference.cache
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.Form1.resources
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.Properties.Resources.resources
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.csproj.GenerateResource.cache
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.csproj.CoreCompileInputs.cache
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.exe
+F:\studia\Artykuł-Cyber\inżynierka_program (1)\c++\TwincatAttempt2\ADS-TwinCat3-Connection\ADSTwinCat3\obj\Debug\ADSTwinCat3.pdb
